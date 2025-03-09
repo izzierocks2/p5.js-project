@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>p5.js Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Drawing App</title>
 </head>
-<body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-  <!-- Your own JS file should come after p5.js -->
-  <script src="sketch.js"></script>
+<body style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <h1>Color Drawing App</h1>
+    <div id="color-picker" style="margin-bottom: 20px;">
+        <button style="padding: 10px; margin: 5px; cursor: pointer; border: none; background-color: red; color: white;" id="red">Red</button>
+        <button style="padding: 10px; margin: 5px; cursor: pointer; border: none; background-color: green; color: white;" id="green">Green</button>
+        <button style="padding: 10px; margin: 5px; cursor: pointer; border: none; background-color: blue; color: white;" id="blue">Blue</button>
+        <button style="padding: 10px; margin: 5px; cursor: pointer; border: none; background-color: yellow; color: white;" id="yellow">Yellow</button>
+    </div>
+    <canvas id="canvas" style="border: 2px solid #333;"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
 </body>
 </html>
